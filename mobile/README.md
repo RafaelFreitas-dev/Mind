@@ -1,5 +1,5 @@
 <p align="center">
-<img align="auto" width="700px" src="frontend/src/assets/img/background&logo_readme.png">
+<img align="auto" width="700px" src="../frontend/src/assets/img/background&logo_readme.png">
 </p>
 <h1 align="center"> Mind - your mind </h1>
 <p align="center">Aqui nossa missão é tornar o cuidado psicológico acessível a todos, oferecendo uma plataforma intuitiva que conecta você a psicólogos qualificados, de forma simples e segura. </p>
