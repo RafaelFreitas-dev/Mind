@@ -1,0 +1,211 @@
+@import url("../main.css");
+
+/* Navbar button */
+.nav-btn-login{
+    box-sizing: border-box;
+    background-color: var(--white-default-100);
+    color: var(--dark-100);
+    padding:7px 29px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 3px solid var(--green-default-100);
+    border-radius: var(--spacing-xs);
+    cursor: pointer;
+}
+
+.nav-btn-login:hover{
+    background-color: #daf7eb;
+}
+
+/* Button (confirmação) */
+
+.button-confirm{
+    background-color: var(--green-default-100);
+    color: var(--white-default-100);
+    padding:10px 20px;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-wrap: nowrap;
+}
+
+.button-confirm:hover{
+    background-color:var( --sea-green-100);
+}
+
+/* Botão (processeguir) */
+
+.button-proceed{
+    background-color: var(--red-default-100);
+    color: var(--black-default-100);
+    padding:10px 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+}
+
+.button-proceed:hover{
+    background-color: var(--paarl-100);
+}
+
+/* Botão (atenção) */
+
+.button-attention{
+    background-color: var(--metallic-copper-100);
+    color: var(--white-default-100);
+    padding:10px 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+}
+
+.button-attention:hover{
+    background-color: rgb(85, 35, 21);
+}
+
+/* Botão ("Planos")  */
+
+.button-planos{
+    font-size: clamp(1rem, 5vw, 1.4rem);
+    background-color: var(--white-default-100);
+    border: none;
+    padding:10px 20px;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+}
+
+.button-planos:hover{
+    background-color: #D6D6D6;
+}
+
+/* Botão ("Cancelar") */
+
+.button-cancelar{
+    background-color: var(--dove-gray-100);
+    color: var(--white-default-100);
+    padding:10px 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+}
+
+.button-cancelar:hover{
+    background-color: var(--mine-shaft01-100);
+}
+
+/* Botão de ("Voltar") e ("Mais") */
+
+.button-open-pop-up{
+    background-color: var(--alto-100);
+    color: var(--dark-100);
+    padding:10px 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    display:flex;
+    gap: var(--spacing-xs);
+    align-items: center;
+    width: max-content;
+}
+
+.button-open-pop-up:hover{
+    background-color: var(--silver-chalice-100);
+}
+
+/* Botão de ("ver") dos card psi*/
+.button-ver-card-psi {
+    cursor: pointer;
+    color: var(--white-default-100);
+    background-color: var(--red-default-100);
+    padding:10px 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border-radius-md);
+}
+.button-ver-card-psi:hover {
+    background-color: var(--paarl-100);
+}
+
+/* Botão de ("mais") da home*/
+.button-mais {
+    background-color: var(--green-default-100);
+    color: var(--white-default-100);
+    padding:10px 25px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    display:flex;
+    gap: var(--spacing-xs);
+    display: flex;
+    align-content: center;
+}
+.button-mais:hover {
+    background-color: var(--green-light-default-100);
+    color: var(--black-default-100);
+}
+/* Botão de ("seta-calendario") do Perfil*/
+
+.button-seta-calendario{
+  border: none;
+  background-color: transparent;
+  margin: 18px 0 0 0;
+}
+.button-seta-calendario:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+.seta-calendario {
+  width: 30px;
+  height: 30px;
+  color: #388e3c;
+  cursor: pointer;
+}
+
+/* Botão Skip Navigation (Acessibilidade) */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.sr-only:focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    color: var(--black-950);
+    font-weight: 500;
+    background-color: var(--tertiary-light-green-700);
+    padding: 0.5rem 1rem; 
+    border-radius: var(--border-radius-sm); 
+    z-index: 50;
+}

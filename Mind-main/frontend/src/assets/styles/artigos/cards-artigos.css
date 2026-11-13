@@ -1,0 +1,64 @@
+.artigo-container{
+    display:flex;
+    background-color: var(--lime-light-100);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xs);
+    gap: var(--spacing-sm);
+    height:max-content;
+    position: relative;
+    width: 100%;
+    /* border: 1px solid #dddddd; */
+}
+
+/* Imagem principal do artigo */
+.artigo-container > img{
+    width:clamp(90px, 20vw, 120px);
+    height: clamp(90px, 20vw, 120px);
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: #ccc;
+    background-size:auto;
+    background-position: center;
+    display: flex;
+    align-self: center;
+}
+
+/* Enunciado do card de artigo */
+.artigo-texto .visible{
+    display: flex;
+    height:100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:15px;
+}
+.artigo-texto h3{
+    color: var(--dark-100);
+    font-weight: 500;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+.artigo-texto p {
+    font-size: 1rem;
+}
+
+/* Botão "Ver" artigo */
+.artigo-btn{
+    width: max-content;
+}
+
+/* .artigo-texto > p > *, .artigo-texto > p > *::before{
+    color: var(--color-03);
+    text-decoration: underline;
+    transition: color 0.1s;
+} */
+
+@media(max-width:698px){
+    .artigo-container{
+        width:100%;
+    }
+    .artigo-texto > p {
+        margin-left:-110px;
+    }
+    .artigo-texto > div{
+        justify-content: flex-start;
+    }
+}

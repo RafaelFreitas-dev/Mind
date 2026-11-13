@@ -1,0 +1,82 @@
+@import url("./cards-artigos.css");
+
+.artigo-sect{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 100%;
+    width: 90%;
+    margin:10px;
+    margin-bottom:6rem;
+}
+
+/* Titulo e subtitulo -------- */
+.artigo-sect h1{
+    font-size:clamp(1.1rem, 6vw, 2.6rem);
+    font-weight: 500;
+}
+.artigo-sect h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.artigo-sect hr{
+    background-color: #474747c5;
+    width: 100%;
+    margin: var(--spacing-sm) 0 
+}
+
+/* Container de artigos ------- */
+.artigos{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "destaques artigos"
+    ;
+    gap:var(--spacing-sm);
+}
+
+.artigos h3{
+    color: var(--deep-cerulean-100);
+}
+
+/* Seção de artigos em destaques ===== */
+.artigos .destaques{
+    display: grid;
+    grid-area: destaques;
+    gap:var(--spacing-sm);
+    align-content:start;
+}
+
+/* Seção de outros artigos =========== */
+.artigos .outros-artigos{
+    /* background-color: #ce813415; */
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xs);
+    display:flex;
+    flex-direction: column;
+    grid-area: artigos;
+    gap:var(--spacing-sm);
+    border: 1px solid #ccc
+}
+
+/* Artigos dessa seção */
+.outros-artigos .artigo-container h3{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+
+/* Responsividade =================== */
+@media(max-width:1200px){
+   .artigos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:698px){
+    .artigos{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        margin:0;
+    } 
+}

@@ -1,0 +1,221 @@
+@import url("../main.css");
+@import url("../ui/buttons.css");
+@import url("./main_login_cadastro.css");
+
+section.login-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: white;
+    padding-inline: 0px !important;
+}
+
+/* Container da imagem */
+.background-img-login-cadastro {
+    width: 105%;
+    height: 100vh;
+    /* ocupa altura total da tela */
+    overflow: hidden;
+    /* corta excesso da imagem */
+    position: relative;
+}
+
+/* Imagem */
+.background-img-login-cadastro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* mantém proporção sem deformar */
+    object-position: right;
+    /* centraliza o foco */
+}
+
+/* Título */
+.container-input-login h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    
+}
+
+/* bloco inputs */
+.inputs {
+    margin-top: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px;
+}
+
+/* título */
+.login-titulo {
+    width: 100%;
+    color: var(--dark-100);
+    display: flex;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* ===== Inputs ===== */
+.input {
+    opacity: 0;
+    transform: translateY(10px);
+    padding-top: 10px;
+}
+
+.animar .input {
+    animation: fadeUp 0.4s ease forwards;
+    will-change: transform, opacity;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Labels */
+.input label {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+    
+}
+
+.input-obrigatorio label::after {
+    content: "*";
+    color: #ff4d4f;
+    margin-left: 3px;
+}
+
+.input-obrigatorio.preenchido label::after {
+    content: "";
+}
+
+input[readonly] {
+    background-color: #d6d6d6 !important;
+    cursor: not-allowed;
+}
+
+/* Inputs estilo moderno */
+.input input {
+    margin-top: 5px;
+    padding: 12px 14px;
+    font-size: 14px;
+    background: #fafafa;
+    transition: 0.25s;
+    border: 1px solid var(--gray-100);
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Hover */
+.input input:hover {
+    border-color: #b8b8b8;
+}
+
+/* Focus premium */
+.input input:focus {
+    border-color: #2f6f5e;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(47, 111, 94, 0.1);
+}
+
+/* ===== ERRO===== */
+.input input.error {
+    border: 1.5px solid #ff4d4f;
+    background-color: #fff;
+}
+
+.error-text {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* -------------OPTIONS---------------- */
+
+.container-options {
+    display: flex;
+    margin-top: 10px;
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--gray-100);
+    width: fit-content;
+    min-height: fit-content
+}
+
+.container-options a {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: var(--border-radius-lg);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-options ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container-options a:hover {
+    background-color: var(--white-default-100);
+}
+
+.container-options a.active {
+    background-color: var(--green-light-default-100);
+    color: var(--black-default-100);
+    transform: scale(1.05);
+    font-weight: 500;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 1000px) {
+    .background-img-login-cadastro {
+        display: none;
+    }
+
+    .container-input-login {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .cadastro-input {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .background-img-login-cadastro {
+        width: 50%;
+    }
+
+    .background-img-login-cadastro img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* mantém proporção sem deformar */
+        object-position: right;
+        /* centraliza o foco */
+    }
+}

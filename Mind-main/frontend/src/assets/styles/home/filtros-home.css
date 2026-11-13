@@ -1,0 +1,259 @@
+@import url("../main.css");
+@import url("../ui/buttons.css");
+
+section.section-filter{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-inline: 5%;
+    flex-direction: column;
+    
+}
+.section-filters-searchbox{
+    background-color: var(--alabaster-100);
+    border-radius: var(--border-radius-md);
+    margin: var(--spacing-xs);
+    padding-top: var(--spacing-xs);
+    padding-bottom: var(--spacing-xs) ;
+    padding-inline: var(--spacing-xl);
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "search search search search "
+        "filter filter filter filter "
+    ;
+}
+
+/*-----------SEARCH-------------- */
+
+.search-boxes {
+    grid-area: search;
+    flex-direction: row;
+    justify-items: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-boxes input {
+    width: 100%;
+    padding: 11px;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid var(--alto-100);
+}
+.search-boxes input:focus{
+    outline: none;
+    border: 1px solid var(--green-default-100);
+}
+.search-boxes input::placeholder {
+    color: var(--dove-gray-100);
+    font-size: 1rem;
+}
+
+.button-search{
+    border-radius: 0 10px 10px 0 !important;
+    transform: translateY(-1px) 
+}
+
+/*-----------FILTER------------ */
+.container-filter-view{
+    display: flex;
+    flex-direction: column;
+}
+.search-filters{
+    grid-area: filter;
+    display:flex;
+    flex-direction: row;
+    gap:var(--spacing-xs);
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: var(--spacing-xs) 0;
+}
+
+button.btn-searchbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.filtro {
+    flex:1;
+    position:relative;
+}
+
+.seta-filtro{
+    font-size: 1.5rem;
+}
+
+/*  Dropdown dos filtros ---------- */
+
+.btn-searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--green-default-100);
+  color: var(--white-default-100);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn-searchbox:hover {
+  background: var(--green-light-default-100);
+}
+
+.seta-filtro {
+  transition: transform 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.checkbox-filter {
+    position: absolute;
+    top: 110%;
+    left: 0;  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--green-default-100);
+    border-radius: var(--border-radius-md);
+    gap: 8px;
+    padding: 10px 12px;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+}
+
+.filtro .checkbox-filter {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.checkbox-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-input input {
+  display: none;
+}
+
+.checkbox-input input + span::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--green-light-default-100);
+  margin-right: 6px;
+  vertical-align: middle;
+  transition: background 0.2s ease;
+}
+
+.checkbox-input input:checked + span::before {
+  background-color: var(--green-light-default-100);
+}
+
+.titulo-checkbox {
+  font-size: 0.8rem;
+  color: var(--white-default-100);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  white-space: nowrap;
+  width: 100%;
+  transition: color 0.15s ease;
+}
+
+.titulo-checkbox:hover {
+  color: var(--green-light-default-100);
+}
+
+
+/*-------VISUALIZACAO---------- */
+
+.search-visualizacao{
+    grid-area: visual;
+    margin: auto;
+    padding-left: 10%;
+}
+
+.container-visualizacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:var(--spacing-xs)
+}
+
+.container-visualizacao h3{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.col-and-row {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.button-col:not(.active),
+.button-row:not(.active){
+    background-color: var(--silver-chalice-100);
+    color: var(--white-default-100);
+}
+
+.button-col.active,
+.button-row.active {
+    background: var(--green-light-default-100) !important;
+    color: var(--dark-100);
+}
+
+/*--------------BUTTON MAIS-------------*/
+
+.container-botao-mais {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+/*-----------RESPONSIVIDADE------------- */
+
+@media(max-width: 798px){
+    .section-filters-searchbox{
+        grid-template-areas: 
+            "search search"
+            "filter filter"
+            "filter filter"
+        ;
+    }
+    .container-visualizacao{
+        flex-direction: row;
+    }
+
+    .search-visualizacao{
+        display:flex;
+        justify-content:flex-end;
+        width: 100%;
+    }
+}
+
+@media(max-width:425px){
+    .search-visualizacao{
+        display: none;
+    }
+}

@@ -1,0 +1,345 @@
+{
+  "titulo": "Termos de Uso",
+  "versao": "1.0",
+  "atualizadoEm": "9 de novembro de 2026",
+  "contatoEmail": "mind@falsoemail.com",
+  "introducao": [
+    "Estes Termos de Uso regulam o acesso e o uso do MIND, plataforma digital disponível na web e em aplicativo para celular que aproxima pessoas que procuram apoio psicológico e profissionais da Psicologia.",
+    "Ao criar uma conta ou usar a plataforma, você declara que leu, entendeu e concorda com estes Termos e com a Política de Privacidade do MIND. Se não concordar, não utilize a plataforma."
+  ],
+  "emergencia": {
+    "titulo": "O MIND não é um serviço de emergência",
+    "texto": "Se você estiver em crise, pensando em se machucar ou em tirar a própria vida, não espere por um agendamento: ligue 188 (CVV, gratuito, 24 horas por dia, ou pelo chat em cvv.org.br) ou 192 (SAMU), ou procure o pronto-socorro mais próximo."
+  },
+  "secoes": [
+    {
+      "id": "quem-somos",
+      "titulo": "Quem somos",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "O MIND é um projeto acadêmico desenvolvido por estudantes do curso de Desenvolvimento de Software Multiplataforma da Fatec Zona Sul, em São Paulo (SP). A plataforma tem como objetivo tornar a busca por apoio psicológico mais organizada, acessível e segura."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Dúvidas sobre estes Termos podem ser enviadas para {contato}."
+        },
+        {
+          "tipo": "aviso",
+          "texto": "Por se tratar de um projeto acadêmico, esta versão dos Termos será revisada técnica e juridicamente, e complementada com os dados do responsável pela plataforma, antes de qualquer operação real."
+        }
+      ]
+    },
+    {
+      "id": "o-que-oferecemos",
+      "titulo": "O que o MIND oferece",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "O MIND facilita a busca por psicólogos, a organização de agendamentos e o acesso a conteúdos e recursos digitais de apoio ao bem-estar emocional. Entre as funcionalidades previstas estão:"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "cadastro e acesso de usuários e de psicólogos;",
+            "busca e filtragem de profissionais por especialidade e abordagem, com visualização de perfis;",
+            "agendamento, confirmação, alteração e cancelamento de consultas, com notificações;",
+            "consultas on-line por meio de serviço de videoconferência integrado, quando disponível;",
+            "artigos informativos e recursos complementares, como diário de humor, meditações guiadas e acompanhamento de progresso."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Algumas funcionalidades podem estar em desenvolvimento ou depender de serviços de terceiros e, por isso, podem não estar disponíveis o tempo todo ou em todas as versões da plataforma."
+        }
+      ]
+    },
+    {
+      "id": "o-que-nao-somos",
+      "titulo": "O que o MIND não é",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "O MIND não substitui avaliação, diagnóstico, tratamento ou acompanhamento profissional.",
+            "O MIND não é um serviço de emergência ou de pronto atendimento.",
+            "O MIND não prescreve medicamentos e não garante resultados terapêuticos.",
+            "Artigos, meditações e demais conteúdos têm caráter informativo e de apoio ao bem-estar, e não constituem orientação clínica individual.",
+            "Recursos de inteligência artificial, se forem oferecidos, terão caráter apenas auxiliar e não tomarão decisões clínicas."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Os atendimentos são realizados por psicólogos que utilizam a plataforma para divulgar seus serviços e organizar sua agenda. A condução técnica e ética de cada atendimento é responsabilidade do profissional, conforme as normas da profissão."
+        }
+      ]
+    },
+    {
+      "id": "quem-pode-usar",
+      "titulo": "Quem pode usar",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Para criar uma conta no MIND, você precisa ter 18 anos ou mais e fornecer informações verdadeiras e atualizadas."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Psicólogos precisam, além disso, ter registro ativo e regular no Conselho Regional de Psicologia (CRP) e mantê-lo válido enquanto oferecerem atendimentos pela plataforma."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Cada perfil acessa apenas o necessário para a sua função:"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Usuário: o próprio perfil, os perfis dos profissionais e os seus agendamentos.",
+            "Psicólogo: o próprio perfil e as consultas vinculadas a ele.",
+            "Administração: apenas os dados necessários para operar a plataforma, sem acessar conteúdo íntimo sem necessidade e autorização."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conta-e-credenciais",
+      "titulo": "Sua conta e suas credenciais",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "A conta é individual e intransferível. Não compartilhe seu acesso com outras pessoas.",
+            "Use uma senha forte, exclusiva para o MIND, e mantenha-a em sigilo.",
+            "O MIND nunca pede sua senha por e-mail, telefone ou mensagem.",
+            "A recuperação de senha é feita por um fluxo seguro, com link ou código de uso único e validade limitada, enviado ao e-mail cadastrado.",
+            "Várias tentativas de login sem sucesso podem bloquear o acesso temporariamente, como proteção contra ataques.",
+            "Se a entrada com conta Google estiver disponível, o MIND receberá apenas os dados mínimos autorizados por você, como nome e e-mail.",
+            "Contas administrativas devem usar autenticação em múltiplos fatores (MFA) sempre que disponível."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Se suspeitar que alguém acessou sua conta, altere sua senha e avise o MIND imediatamente pelo e-mail {contato}."
+        }
+      ]
+    },
+    {
+      "id": "suas-responsabilidades",
+      "titulo": "Suas responsabilidades",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Ao usar o MIND, você se compromete a:"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "fornecer dados verdadeiros e mantê-los atualizados;",
+            "proteger suas credenciais de acesso;",
+            "usar a plataforma de forma lícita e de acordo com estes Termos;",
+            "tratar com respeito os demais usuários e profissionais;",
+            "comparecer às consultas agendadas ou cancelá-las com antecedência, pela própria plataforma."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Se você é psicólogo, também se compromete a:"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "manter corretos e atualizados seus dados profissionais, como nome, número do CRP, especialidades e abordagens;",
+            "atuar de acordo com o Código de Ética Profissional do Psicólogo e com as normas do Conselho Federal de Psicologia, inclusive as que tratam do atendimento on-line;",
+            "manter o sigilo profissional e acessar dados de usuários somente quando houver vínculo legítimo de atendimento;",
+            "manter sua disponibilidade de horários atualizada e honrar os agendamentos confirmados."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proibicoes",
+      "titulo": "O que não é permitido",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Não é permitido:"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "acessar ou tentar acessar contas e dados de outras pessoas;",
+            "explorar falhas de segurança, realizar ataques ou testar vulnerabilidades sem autorização;",
+            "prejudicar a disponibilidade do serviço, por exemplo com o envio automatizado e em massa de requisições;",
+            "criar perfis falsos, se passar por outra pessoa ou por profissional, ou usar o registro profissional de terceiros;",
+            "compartilhar, vender ou ceder credenciais e contas;",
+            "publicar ou disseminar conteúdo ilícito, ofensivo, discriminatório ou que viole direitos de terceiros;",
+            "gravar, fotografar ou divulgar consultas on-line sem o consentimento de todos os participantes;",
+            "usar dados obtidos na plataforma para outras finalidades, como envio de publicidade ou contatos não solicitados."
+          ]
+        },
+        {
+          "tipo": "aviso",
+          "texto": "Encontrou uma falha de segurança? Não tente explorá-la: avise o MIND pelo e-mail {contato} para que ela seja corrigida."
+        }
+      ]
+    },
+    {
+      "id": "agendamentos",
+      "titulo": "Agendamentos, consultas on-line e pagamentos",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Os horários disponíveis são definidos por cada psicólogo. Pelo MIND, você pode solicitar, acompanhar e cancelar seus agendamentos, e cada consulta fica registrada com o seu status (agendada, cancelada ou concluída)."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Regras de antecedência para cancelamento ou remarcação, quando existirem, serão informadas antes da confirmação do agendamento."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Nas consultas on-line, a videoconferência é feita por um serviço integrado à plataforma. O MIND não grava as consultas nem registra o conteúdo delas. Para a sua privacidade, participe de um lugar reservado e com boa conexão; a qualidade da chamada também depende da sua internet."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Quando o pagamento pela plataforma estiver habilitado, ele será processado por um provedor de pagamentos especializado. O MIND não armazena os dados completos do seu cartão, apenas o status e o identificador da transação. Valores e condições serão informados antes da confirmação."
+        }
+      ]
+    },
+    {
+      "id": "diario-de-humor",
+      "titulo": "Diário de humor e recursos de bem-estar",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "O diário de humor e os demais recursos de bem-estar são opcionais: você decide se e quando usá-los."
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Por padrão, seus registros de humor ficam visíveis apenas para você e não são compartilhados com psicólogos nem com terceiros.",
+            "Os registros não são usados para publicidade e não geram diagnósticos automáticos.",
+            "Você pode pedir a exclusão dos seus registros; as cópias de segurança (backups) são apagadas no ciclo normal de expiração."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Se em algum momento você sentir que precisa de ajuda imediata, procure os serviços de emergência indicados no início destes Termos."
+        }
+      ]
+    },
+    {
+      "id": "privacidade",
+      "titulo": "Privacidade e proteção de dados",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "O MIND trata dados pessoais de acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD, Lei nº 13.709/2018). Os detalhes estão na Política de Privacidade; em resumo:"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "coletamos apenas o necessário para cada finalidade, como nome, e-mail, senha (guardada somente em formato protegido, nunca em texto puro), dados profissionais e CRP dos psicólogos, agendamentos, registros de humor opcionais e dados técnicos de acesso;",
+            "informações que revelem aspectos da sua saúde emocional podem ser dados pessoais sensíveis e recebem proteção reforçada;",
+            "registros de humor e informações sobre atendimentos não são usados para publicidade comportamental;",
+            "fornecedores que ajudam a operar a plataforma, como serviços de login, pagamento, videoconferência e notificações, recebem apenas os dados mínimos necessários;",
+            "e-mails e notificações trazem só o essencial, sem conteúdo sensível;",
+            "o acesso aos dados é limitado a você, ao psicólogo com quem você tem atendimento e às pessoas autorizadas da equipe que precisem deles, e as ações administrativas são registradas para auditoria."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Você pode solicitar a confirmação de que tratamos seus dados, o acesso a eles, a correção de dados incorretos, informações sobre compartilhamento e a eliminação ou o bloqueio de dados, quando cabível, além dos demais direitos previstos na LGPD. Para isso, escreva para {contato}."
+        }
+      ]
+    },
+    {
+      "id": "responsabilidades-mind",
+      "titulo": "Responsabilidades do MIND",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "O MIND se compromete a:"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "adotar medidas técnicas e administrativas razoáveis de segurança e privacidade, como senhas armazenadas apenas em formato protegido (hash), comunicação por HTTPS, controle de acesso por perfil, limite de tentativas de acesso e cópias de segurança protegidas;",
+            "informar com clareza para que usa os seus dados;",
+            "manter um canal de contato para dúvidas, solicitações e denúncias;",
+            "corrigir as falhas identificadas;",
+            "comunicar aos titulares afetados e à Autoridade Nacional de Proteção de Dados (ANPD) os incidentes de segurança que possam trazer risco ou dano relevante, conforme a LGPD."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O MIND busca manter a plataforma disponível, mas podem ocorrer interrupções para manutenção, atualizações ou por falhas de serviços de terceiros, como provedores de internet e de hospedagem."
+        }
+      ]
+    },
+    {
+      "id": "propriedade-intelectual",
+      "titulo": "Conteúdo e propriedade intelectual",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "A marca MIND, a identidade visual da plataforma e os conteúdos publicados por ela, como artigos e meditações, pertencem ao MIND ou a seus licenciantes. Você pode usá-los para fins pessoais e não comerciais dentro da plataforma, mas não pode copiá-los, modificá-los ou distribuí-los sem autorização."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O conteúdo que você publica, como foto de perfil e texto de apresentação, continua sendo seu. Ao publicá-lo, você autoriza o MIND a exibi-lo na plataforma enquanto sua conta estiver ativa e declara ter o direito de usá-lo."
+        }
+      ]
+    },
+    {
+      "id": "suspensao-encerramento",
+      "titulo": "Suspensão e encerramento da conta",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "O uso indevido da plataforma, incluindo o descumprimento destes Termos, poderá resultar em bloqueio, suspensão ou encerramento da conta, respeitados os seus direitos como titular de dados e a legislação. Casos que possam configurar ilícitos poderão ser encaminhados às autoridades competentes."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Você pode encerrar sua conta quando quiser, pela plataforma ou pelo e-mail {contato}. Depois do encerramento, seus dados serão eliminados ou anonimizados, exceto aqueles que precisarem ser mantidos para cumprir obrigações legais ou para o exercício regular de direitos, apenas pelo prazo necessário."
+        }
+      ]
+    },
+    {
+      "id": "alteracoes",
+      "titulo": "Alterações destes Termos",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Estes Termos podem ser atualizados para refletir mudanças na plataforma ou na legislação. A versão e a data da última atualização aparecem no início desta página, e mudanças relevantes serão comunicadas com antecedência pela plataforma ou por e-mail."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Se você continuar usando o MIND depois que as mudanças entrarem em vigor, estará de acordo com a nova versão. Se não concordar, pode encerrar sua conta a qualquer momento."
+        }
+      ]
+    },
+    {
+      "id": "legislacao",
+      "titulo": "Legislação aplicável e foro",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Estes Termos são regidos pelas leis brasileiras, em especial a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), o Marco Civil da Internet (Lei nº 12.965/2014) e, quando aplicável, o Código de Defesa do Consumidor (Lei nº 8.078/1990)."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Eventuais conflitos poderão ser resolvidos no foro do domicílio do usuário."
+        }
+      ]
+    },
+    {
+      "id": "contato",
+      "titulo": "Contato",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Para dúvidas sobre estes Termos, solicitações sobre seus dados pessoais, denúncias de uso indevido ou relatos de falhas de segurança, escreva para {contato}."
+        }
+      ]
+    }
+  ]
+}

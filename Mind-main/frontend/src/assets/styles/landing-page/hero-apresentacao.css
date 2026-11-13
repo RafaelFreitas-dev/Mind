@@ -1,0 +1,261 @@
+/* Main/Hero Section------------------ */
+
+main.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--spacing-md) clamp(10px, 100vw, 130px);
+    gap: var(--spacing-sm);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: clamp(350px, 60vw, 587px);
+}
+
+.bg2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+main.main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            var(--bege-default) 30%,
+            transparent);
+    z-index: -1;
+    pointer-events: none;
+    /* não bloqueia cliques */
+}
+
+main.main>span {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+/* Tipografia ------------------- */
+
+.heading-hero {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: var(--spacing-xs);
+    width: max-content;
+}
+
+.heading-hero>img {
+    width: clamp(30px, 10vw, 120px);
+}
+
+.heading-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+}
+
+.heading-1 img {
+    width: clamp(100px, 25vw, 260px);
+}
+
+.heading-1 h1 {
+    font-family: poppins;
+    color: var(--black-default-100);
+    font-size: clamp(1rem, 2vw, 1.9rem);
+}
+
+main.main p {
+    font-weight: 600;
+    font-size: clamp(.8rem, 2vw, 1.3rem);
+    max-width: clamp(200px, 60vw, 380px);
+}
+
+.buttons-hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-hero {
+    background-color: transparent !important;
+}
+
+.btn-hero:hover {
+    background-color: var(--feta-100) !important;
+}
+
+
+
+/* Apresentação Section-------------------- */
+
+#apresentacao {
+    background-color: var(--white-default-100);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    padding-inline: 5%;
+    color: var(--dark-default-100);
+    align-items: flex-start;
+    height: 500px;
+}
+
+.sessoes-online-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+.tittle-box {
+    background-color: var(--green-light-default-100);
+    border-radius: var(--border-radius-md);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    height: auto;
+}
+
+.tittle-box h3 {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+
+/* Conteudo de cada box da seção de apresentação*/
+
+.block-left {
+    background-color: var(--green-light-default-100);
+    border-radius: var(--spacing-xs);
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-md);
+    color: var(--black-default-100);
+    height: 100%;
+    gap: var(--spacing-xs);
+}
+
+
+
+/* Headings ------------------- */
+
+.sessoes-online-box h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--green-default-100);
+}
+
+.block-left h4,
+.block-right h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+}
+
+.destaque {
+    color: var(--white-default-100)
+}
+
+/*  Botão -------------------- */
+
+.block-left span.btn-article {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: end;
+}
+
+
+.block-right {
+    background-color: var(--green-light-default-100);
+    border-radius: var(--spacing-xs);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    color: var(--black-default-100);
+    height: 100%;
+    gap: var(--spacing-xs);
+}
+
+.block-right h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+/* Imagem ------------------- */
+
+img.apres-img {
+    display: flex;
+    align-self: center;
+    max-width: 250px;
+    margin: var(--spacing-xs);
+}
+
+/* Responsividade -------------- */
+
+@media(max-width: 800px) {
+    #apresentacao {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
+        padding: var(--spacing-sm);
+        height: auto;
+    }
+
+    img.apres-img {
+        display: flex;
+        align-self: center;
+        max-width: 150px;
+        margin: var(--spacing-xs);
+    }
+
+    /* Gradiente hero */
+    main.main::after {
+        background: linear-gradient(180deg,
+                var(--bege-default-100) 35%,
+                transparent);
+    }
+
+    /* Botão da hero */
+    .btn-ver-planos,
+    .heading-hero>img {
+        display: none;
+    }
+
+    /* Posição heading a cima */
+    main.main {
+        justify-content: flex-start;
+        padding: var(--spacing-md);
+    }
+
+    /* Grid de headings do hero */
+    main.main>span {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+
+    .buttons-hero {
+        gap: var(--spacing-sm);
+    }
+}

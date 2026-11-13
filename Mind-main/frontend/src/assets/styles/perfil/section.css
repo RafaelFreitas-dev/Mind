@@ -1,0 +1,52 @@
+@import url("../main.css");
+@import url("../ui/buttons.css");
+@import url("../ui/icons.css");
+
+
+.container-section-perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 10%;
+  gap: 20px;
+  height: 100%;
+}
+
+/* Container principal com fundo verde claro */
+.perfil-container {
+  display: flex;
+  border-radius: 12px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 50%;
+  gap: 1rem;
+  flex-direction: column;
+  height: 100%;
+}
+.sobre-notif-container{
+  width: 100%;
+}
+.sobre-info-container{
+  width: 100%;
+}
+@media (max-width:1024px){
+  .container-section-perfil{
+    padding-inline: 2%;
+   
+  }
+}
+@media (max-width:950px){
+  .container-section-perfil{
+    flex-direction: column;
+  }
+}
+@media (max-width:768px){
+  .perfil-container{
+    width: 100%;
+  }
+  .container-sair{
+    order: 3;
+  }
+}

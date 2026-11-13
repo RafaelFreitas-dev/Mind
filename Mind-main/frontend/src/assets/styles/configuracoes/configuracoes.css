@@ -1,0 +1,289 @@
+@import url("../pop-ups/deletar.css");
+
+section.config{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-inline: 10%;
+}
+section.config h1{
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+.container-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap:20px;
+    margin:20px 0;
+}
+.input-e-span input,
+.input-e-span select,
+.tags-especializacoes-input{
+    width:100%;
+    padding:10px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--gray-100);
+    font-size: 1rem;
+    margin-top:2px;
+}
+
+.container-perfil h1{
+    font-size: 2rem;
+    border-bottom: 3px solid var(--green-kelp-100);
+    margin:30px 0;
+    color: var(--green-kelp-100)
+}
+
+/* Imagem de perfil ----------- */
+.container-img,
+.img-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+.container-img{
+    margin-left:0px;
+    padding:10px;
+    width: 30%;
+}
+.imgEdit{
+    width: clamp(150px, 20vw, 180px);
+    height: clamp(150px, 20vw, 180px);
+    border-radius: 50%;
+    background-color: #29292969;
+    border: 1px solid #ccc;
+}  
+
+/* Imagem de wallpaper */
+
+.img-wallpaper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-edit-wallpaper{
+    width: 70%;
+    height: clamp(150px, 20vw, 180px);
+    border-radius: 10px;
+    background-color: #29292969;
+    border: 1px solid #ccc;
+}
+
+/* Indice da página -------------------- */
+
+.atalhos {
+    width:clamp(160px, 30vw, 250px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:10px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.atalhos li {
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.atalhos li:last-child {
+    color: var(--metallic-copper-100);
+    padding: 5px;
+    border-bottom: none ;
+}
+
+.atalhos li:hover{
+    background-color: var(--dairy-cream-100);
+    border-radius: var(--border-radius-sm);
+}
+
+li > a#Geral,
+li > a#Perfil,
+li > a#Horarios,
+li > a#Deletar{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Forms =============================== */
+
+.container-inputs{
+    width: 100%;
+}
+
+/* Informações gerais -------- */
+.container-input-1{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+    margin-top:var(--spacing-sm);
+}
+
+/* Atualização de credenciais */
+.container-input-2{
+    margin-top: 1.5rem ;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1.5rem;
+}
+
+/* Informações perfil ------- */
+
+.container-perfil{
+    display: flex;
+    flex-direction: column;
+    gap:var(--spacing-sm);
+}
+.container-sobre-mim, 
+.container-medicamento, 
+.container-preferencias, 
+.container-especializacoes, 
+.container-horario-atendimento,
+.containers-articles{
+    display: flex;
+    flex-direction: column;
+}
+.container-sobre-mim span, 
+.container-medicamento span, 
+.container-preferencias span,  
+.container-horario-atendimento span,
+.containers-articles span{
+    opacity: 70%;
+    font-size:1rem;
+}
+
+.container-sobre-mim h3, 
+.container-medicamento h3, 
+.container-preferencias h3,  
+.container-especializacoes h3, 
+.container-horario-atendimento h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.container-sobre-mim textarea, 
+.container-medicamento textarea, 
+.container-preferencias textarea,
+.containers-articles textarea{
+    height: 100px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--gray-100);
+    padding: var(--spacing-sm);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+}
+.container-sobre-mim textarea:focus, 
+.container-medicamento textarea:focus, 
+.container-preferencias textarea:focus, 
+.container-sobre-mim textarea:focus, 
+.container-agendamento:focus,
+.input-e-span input:focus,
+.input-e-span select:focus,
+.containers-articles input:focus,
+.containers-articles textarea:focus{
+    outline: 0;
+    border-color: var(--orange-default-100);
+    box-shadow: 0 0 0 0.2rem var(--primary-orange-700);
+}
+
+/* Tags de especializações */
+
+ul.tags-list{
+    display: flex;
+    flex-wrap: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+ul.tags-list > .tag-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--tertiary-light-green-700);
+    color: var(--black-900);
+    padding: 5px 10px;
+    border-radius: var(--border-radius-lg);
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    list-style:none;
+}
+
+.btn-remove-tag{
+    background: none;
+    border: none;
+    display: flex; 
+    color: var(--black-900);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Botão de atualizar ------ */
+.container-atualizar{
+    margin: 1.5rem 0 6rem 0;
+    display: flex;
+    justify-content: end;
+}
+
+/* Seção de deletar conta -- */
+.container-deletar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--paarl-100);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-md);
+    color:var(--white-default-100);
+    gap:2rem;
+    margin:30px 0px;
+}
+
+input[type="file"]{
+    display:none;
+}
+/* Responsividade -------------------------- */
+
+@media(max-width:800px){
+    section.config{
+        margin: var(--spacing-sm);
+    }
+    .atalhos{
+        width:100%;
+    }
+    .container-section{
+        flex-direction: column;
+        margin: 1.5rem;
+    }
+    .container-img{
+        margin: auto;
+        width: 100%;
+    }
+    .container-input-1{
+        grid-template-columns: auto;
+    }
+    .container-atualizar{
+        justify-content: center;
+    }
+    .container-deletar{
+        flex-direction: column;
+        margin: 1.5rem;
+        align-items: center;
+    }
+    .pop-up-deletar div{
+        width:80%;
+    }
+    .img-edit-wallpaper{
+        width: 100%;
+    }
+}

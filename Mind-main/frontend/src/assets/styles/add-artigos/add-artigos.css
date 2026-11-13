@@ -1,0 +1,42 @@
+.containers-articles{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs)
+}
+
+/* Tipografia da página ---------------------------- */
+.containers-articles h4{
+    font-weight: 500;
+}
+
+.containers-articles h2{
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-bottom: 3px solid var(--green-kelp-100);
+    margin:30px 0;
+}
+
+/* Imagem de perfil ---------------------------------*/
+.imgEdit{
+    border-radius: 10px !important;
+}  
+
+/* Inputs de informação para criação de artigos ---- */
+#nomeEdit{
+    border-radius: var(--border-radius-sm);
+    border: 1px solid #bec0c2;
+    padding: var(--spacing-xs);
+}
+/* Botão ----------------------------------- */
+.container-atualizar-article{
+    display: flex;
+    justify-content: end;
+    margin: 2rem 0;
+}
+
+/* Responsividade -------------------------- */
+@media(max-width:800px){
+    .container-atualizar{
+        justify-content: end;
+    }
+}

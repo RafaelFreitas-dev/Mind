@@ -1,0 +1,177 @@
+@import url("../main.css");
+@import url("../ui/buttons.css");
+@import url("../ui/icons.css");
+
+.container-calendario {
+  background: var(--bege-default-100);
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  height: max-content;
+}
+
+/* Título */
+.container-calendario h1 {
+  text-align: center;
+  background: var(--orange-default-100);
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px;
+}
+
+/* =========================
+   HEADER (MÊS + SETAS)
+========================= */
+
+.header-calendario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-calendario h2 {
+  font-size: 1.4rem;
+  color: var(--black-default-100);
+  text-transform: capitalize;
+  margin: 10px 0 0 0;
+}
+
+/* Botões de navegação */
+
+.button-seta-calendario {
+  background: var(--gray-100);
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button-seta-calendario svg {
+  width: 30px;
+  height: 30px;
+}
+
+.button-seta-calendario:hover {
+  scale: 1.05;
+}
+
+/* =========================
+   GRID DO CALENDÁRIO
+========================= */
+
+.grid-calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding-inline: 10px;
+  padding-bottom: 20px;
+}
+
+/* Nome dos dias da semana */
+
+.dia-semana {
+  text-align: center;
+  font-weight: 600;
+  padding: 8px 0;
+  color: var(--black-default-100);
+}
+
+/* =========================
+   DIA DO CALENDÁRIO
+========================= */
+
+.dia-calendario {
+  background: var(--alabaster-100);
+  border: 1px solid var(--alto-100);
+  border-radius: 10px;
+  padding: 8px;
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dia-calendario:hover {
+  background: var(--green-default-100);
+  color: var(--white-default-100);
+}
+
+/* Número do dia */
+
+.numero-dia {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Dia atual */
+
+.dia-hoje {
+  background: var(--green-default-100);
+  color: var(--white-default-100);
+}
+
+/* Dia mes que vem */
+
+.dia-outro-mes{
+  background: var(--silver-chalice-100);
+}
+/* =========================
+   HORÁRIOS DO DIA
+========================= */
+
+.horarios-dia {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.horario {
+  font-size: 0.75rem;
+  background: var(--white-default-100);
+  padding: 2px 6px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+/* "+ X mais" */
+
+.mais-horarios {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+.container-legenda{
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.block-legenda{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.block-legenda p{
+  font-size: medium;
+  font-weight: 500;
+  margin: 0;
+}
+
+.consulta-marcada{
+  width: 20px;
+  height: 20px;
+  background-color: var(--green-light-default-100);
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.consulta-nao-confirmada{
+  width: 20px;
+  height: 20px;
+  background-color: var(--orange-default-100);
+  display: inline-block;
+  border-radius: 3px;
+}

@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "fuse.js": "^7.1.0",
+    "react-router-dom": "^7.8.2"
+  },
+  "scripts": {
+    "start": "rodar-tudo.bat",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && ./mvnw spring-boot:run",
+    "dev:mobile": "cd mobile && flutter run",
+    "i:frontend": "cd frontend && npm install",
+    "i:mobile": "cd mobile && flutter pub get",
+    "install:all": "npm install && npm run i:frontend && npm run i:mobile",
+    "start:backend": "cd backend && mvnw.cmd spring-boot:run",
+    "start:frontend": "npm run dev --prefix frontend",
+    "start:mobile": "cd mobile && flutter run",
+    "dev": "concurrently --names \"BACK,FRONT\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run start:backend\" \"npm run start:frontend\"",
+    "dev:all": "concurrently --names \"BACK,FRONT\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run start:backend\" \"npm run start:frontend\"",
+    "devices": "cd mobile && flutter devices",
+    "emulators": "cd mobile && flutter emulators",
+    "reset:db": "node reset-db.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "mongodb": "^7.1.0"
+  }
+}

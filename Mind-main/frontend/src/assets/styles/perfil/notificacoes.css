@@ -1,0 +1,76 @@
+@import url("../main.css");
+@import url("../ui/buttons.css");
+@import url("../ui/icons.css");
+
+.notif-container{
+  width: 100%;
+  height: 100%;
+  background: var(--bege-default-100);
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.notif-header{
+  background: var(--orange-default-100);
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+}
+
+.notif-header h1{
+  margin:0;
+  font-size: 28px;
+}
+
+.notif-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:var(--grayish-white-100);
+  margin:20px;
+  padding:20px;
+  border-radius:20px;
+}
+
+.notif-left{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.notif-date{
+  font-size:25px;
+  font-weight:600;
+}
+
+.icon-green{
+  background:#9cd18b;
+  padding:12px;
+  border-radius:15px;
+}
+
+.icon-orange{
+  background:#f2a45f;
+  padding:10px;
+  border-radius:15px;
+}
+
+.btn-start{
+  background:#245c3d;
+  color:white;
+  border:none;
+  padding:10px 15px;
+  border-radius:15px;
+  font-size:18px;
+  cursor:pointer;
+}
+
+.btn-view{
+  background:#cf5c38;
+  color:black;
+  border:none;
+  padding:10px 15px;
+  border-radius:15px;
+  font-size:18px;
+  cursor:pointer;
+}

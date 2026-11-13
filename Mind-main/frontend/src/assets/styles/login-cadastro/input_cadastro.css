@@ -1,0 +1,143 @@
+@import url("../main.css");
+@import url("./main_login_cadastro.css");
+
+/* ===== Header ===== */
+.container-icon-return-login {
+  width: 100%;
+}
+
+.icon-return-login {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+.icon-return-login:hover svg {
+  transition: transform 0.2s ease;
+}
+
+.icon-return-login:hover svg {
+  transform: scale(1.1) translateY(-2px);
+}
+
+/* ===== GRID ===== */
+.cadastro-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.loading-cep {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+}
+
+
+/* .container-termos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.container-termos label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.container-termos label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2f6f5e;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.25s ease;
+}
+
+.checkbox:checked+label::before {
+  background: #2f6f5e;
+  transform: scale(1.1);
+}
+
+.checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translateY(-60%) rotate(45deg);
+  opacity: 0;
+  animation: drawCheck 0.3s ease forwards;
+}
+
+@keyframes drawCheck {
+  from {
+    opacity: 0;
+    transform: translateY(-60%) scale(0.5) rotate(45deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-60%) scale(1) rotate(45deg);
+  }
+} */
+
+.label-text {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+
+/* caixa */
+.label-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2f6f5e;
+  border-radius: 6px;
+}
+
+/* checked */
+.checkbox:checked + .label-text::before {
+  background: #2f6f5e;
+}
+
+/* check */
+.checkbox:checked + .label-text::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

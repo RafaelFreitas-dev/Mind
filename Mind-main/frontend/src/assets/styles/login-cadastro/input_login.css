@@ -1,0 +1,46 @@
+@import url("../main.css");
+@import url("../ui/buttons.css");
+@import url("./main_login_cadastro.css");
+
+
+.container-input-login {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+/* container dos botões */
+.container-cadastrar-entrar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: nowrap;
+    padding: 30px 0px;
+    width: 100%;
+}
+
+/* links */
+.container-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* link cadastro */
+.link-cadastro {
+    padding: 10px 2px;
+    text-decoration: underline;
+}
+
+/* hover */
+.link-cadastro:hover {
+    color: var(--deep-cerulean-100);
+}
+
+

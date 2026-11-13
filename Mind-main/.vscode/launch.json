@@ -1,0 +1,35 @@
+{
+  // F5 no "Mind: tudo" sobe backend + site e depois o app, com hot reload
+  // e breakpoints no Dart. Requer as extensoes Flutter/Dart.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Sobe API e site (preLaunchTask) e so entao inicia o app.
+      "name": "Mind: tudo (API + site + app)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "mobile",
+      "preLaunchTask": "Mind: backend + site"
+    },
+    {
+      // Para quando a API e o site ja estao rodando em outro terminal.
+      "name": "Só o app (Android)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "mobile"
+    },
+    {
+      // Aponta o app para um IP da rede local (celular fisico).
+      // Troque o IP e lembre de liberar o mesmo endereco em
+      // mobile/android/app/src/main/res/xml/network_security_config.xml
+      "name": "Só o app (celular físico)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "mobile",
+      "args": ["--dart-define=API_BASE_URL=http://192.168.0.15:8080"]
+    }
+  ]
+}

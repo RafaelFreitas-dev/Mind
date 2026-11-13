@@ -1,0 +1,85 @@
+{
+  // Tarefas do projeto Mind. Ctrl+Shift+B ou "Terminal > Executar Tarefa..."
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Backend (Spring Boot)",
+      "type": "shell",
+      "command": "npm run start:backend",
+      "isBackground": true,
+      "presentation": {
+        "group": "mind",
+        "panel": "dedicated",
+        "reveal": "always"
+      },
+      // O problemMatcher "background" diz ao VS Code quando o servidor ja
+      // subiu — sem isso, uma tarefa que nunca termina travaria o F5.
+      "problemMatcher": {
+        "owner": "spring",
+        "pattern": {
+          "regexp": "^(ERROR)\\s+(.*)$",
+          "severity": 1,
+          "message": 2
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*Starting MindApplication.*",
+          "endsPattern": ".*Started MindApplication.*"
+        }
+      }
+    },
+    {
+      "label": "Site (Vite)",
+      "type": "shell",
+      "command": "npm run start:frontend",
+      "isBackground": true,
+      "presentation": {
+        "group": "mind",
+        "panel": "dedicated",
+        "reveal": "always"
+      },
+      "problemMatcher": {
+        "owner": "vite",
+        "pattern": {
+          "regexp": "^(ERROR)\\s+(.*)$",
+          "severity": 1,
+          "message": 2
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*VITE.*",
+          "endsPattern": ".*Local:.*"
+        }
+      }
+    },
+    {
+      // Usada como preLaunchTask do app: sobe API e site em paralelo.
+      "label": "Mind: backend + site",
+      "dependsOn": ["Backend (Spring Boot)", "Site (Vite)"],
+      "dependsOrder": "parallel",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Instalar dependencias (raiz + site + app)",
+      "type": "shell",
+      "command": "npm run install:all",
+      "problemMatcher": []
+    },
+    {
+      "label": "Dispositivos Flutter",
+      "type": "shell",
+      "command": "npm run devices",
+      "problemMatcher": []
+    },
+    {
+      "label": "Resetar banco (MongoDB)",
+      "type": "shell",
+      "command": "npm run reset:db",
+      "problemMatcher": []
+    }
+  ]
+}

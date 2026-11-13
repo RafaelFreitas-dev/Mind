@@ -1,0 +1,64 @@
+@import url("../main.css");
+@import url("../ui/buttons.css");
+@import url("../ui/icons.css");
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 2rem 0rem;
+}
+
+.card-sobre-container {
+  width: 100%;
+  font-size: 1rem;
+  min-height: 100px;
+  border-radius: 10px;
+  border: 1px solid #666666;
+  padding: 10px;
+}
+
+.card-info-container h4 {
+  font-size: 1rem;
+  width: max-content;
+  font-weight: 600;
+}
+
+.card-ficha-container {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  border: 1px solid #666666;
+  padding: 10px;
+}
+
+.card-ficha-container-psi {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid #666666;
+  padding: 10px;
+}
+
+.container-horarios-psi h4 {
+  font-size: 1.1rem;
+  width: max-content;
+  font-weight: 600;
+}
+
+.container-horario-atendimento-psi {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 20px;
+}
+
+.container-horario-atendimento-psi p {
+  border: 1px solid #555;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+
+}

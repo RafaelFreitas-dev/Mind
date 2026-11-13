@@ -1,0 +1,13 @@
+@import url("../main.css");
+@import url("../ui/buttons.css");
+@import url("../ui/icons.css");
+
+.container-sair {
+  background-color: var(--apricot-100);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}

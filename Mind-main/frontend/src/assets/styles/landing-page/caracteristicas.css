@@ -1,0 +1,96 @@
+/* Seções gerais (titulo) ------------ */
+.section > h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 50px 0;
+}
+
+/* Seção de caracteristicas ------------ */
+
+.section-caract{
+    margin-bottom:10%;
+    padding-inline: 10%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.section-caract h1{
+    padding: 3rem;
+}
+
+.container-goals{
+    object-fit: contain;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: var(--spacing-md)
+}
+
+.goal{
+    border-radius:10px;
+    padding:15px 40px;
+    padding-bottom:30px;
+    max-width:600px;
+}
+
+/* Titulo de cada card -------------- */
+.goal span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+.goal span h2{
+    font-size: clamp(1.3rem, 5vw, 1.7rem);
+    font-weight: 600;
+}
+
+/* Estilo dos cards ---------------- */
+.goal p{
+    font-size: 1rem;
+}
+.goal:nth-child(1){
+    background-color: var(--bege-default-100);
+    color:var(--dark-100);
+    justify-self: end;
+}
+.goal:nth-child(2){
+    background-color: var(--apricot-100);
+    color:var(--dark-100);
+}
+.goal:nth-child(3){
+    background-color: var(--orange-default-100);
+    color:var(--dark-100);
+    justify-self: end;
+}
+.goal:nth-child(4){
+    background-color: var(--red-default-100);
+    color:var(--dark-100);
+}
+
+/* Icone -------------------------- */
+.bi-icon{
+    font-size:clamp(20px,50vw, 40px);
+    margin:15px 0px
+}
+
+/* Responsividade ----------------- */
+
+@media(max-width:800px){
+    .section-caract{
+        padding-inline: 5%;
+    }
+    .goal{
+        padding: 10px 20px;
+    }
+    .container-goals{
+        grid-template-columns: auto;
+    }
+    .goal:nth-child(1),
+    .goal:nth-child(2),
+    .goal:nth-child(3),
+    .goal:nth-child(4){
+        justify-self: center;
+    }
+}

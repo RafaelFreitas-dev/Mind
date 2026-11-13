@@ -1,0 +1,70 @@
+section.container-questions{
+    margin-bottom:80px;
+    display:flex;
+    flex-direction: column;
+}
+section.container-questions > div{
+    width: 60%;
+}
+section.container-questions .answer{
+    display:flex;
+    padding:20px;
+    color:#242424;
+    font-size: 1rem;
+    background-color: #ececec;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    
+}
+.container-questions{
+    align-items: center;
+}
+section.container-questions h1{
+    text-align: center;
+    margin-bottom:40px;
+    font-size:clamp(1.5rem,5vw, 2rem);
+    font-weight: 600;
+    padding-bottom: 2rem;
+    border-bottom:2px solid var(--green-default-100);
+    width: 60%;
+}
+.accordion{
+    width:100%;
+    border:none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 20px;
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    font-weight: 500;
+    background: none;
+    border-bottom:5px solid var(--green-default-100);
+    transition: 0.4s;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin-top:20px;
+}
+button.accordion:focus{
+    outline: none;
+    background-color:#f5e0a59f;
+}
+button.accordion:hover{
+    background-color:#f5e0a59f;
+}
+
+.bi-icon{
+    transition: 0.5s;
+    transform: rotate(0deg);
+}
+.arrow-icon{
+    transform: rotate(180deg);
+}
+
+/* Responsividade ----------------- */
+
+@media(max-width:638px){
+    section.container-questions > div{
+        margin:0 5% 0 5%;
+    }
+}

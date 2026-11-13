@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+
+    /* Cores ---------------------- */
+    
+    --dark-100: #000;
+    --black-default-100: #16120d;
+    --white-default-100: #fbfbfb;
+    --orange-default-100: #f8a764;
+    --bege-default-100: #f5e0a5;
+    --bege-default:#F7EFD6;
+    --green-light-default-100: #a7e293;
+    --red-default-100: #d46240;
+    --green-default-100: #1c5841;
+
+    --hunter-green-100: #182514;
+    --green-kelp-100: #31462a;
+    --deep-cerulean-100: #4C6A42;
+    --azure-radiance-100: #69905C;
+    --olivine-100: #87b877;
+    --periwinkle-100: #A7E293;
+    --feta-100: #ddf8d6;
+    --lime-light-100: #e7ffe0;
+
+    --walnut-100: #6d4217;
+    --paarl-100: #9c6125;
+    --brandy-punch-100: #ce8134;
+    --dairy-cream-100: #F9ECC7;
+
+    --clinker-100: #39150b;
+    --metallic-copper-100: #692D1B;
+    --paarl-100: #9D472D;
+    --apricot-100: #ef917d;
+    --mandys-pink-100: #f5c6bf;
+
+    --green-pea-100: #1c5841;
+    --sea-green-100: #2c7e5f;
+    --ocean-green-100: #3ca77e;
+    --shamrock-100: #4ed19f;
+    --aquamarine-100: #77fbc5;
+
+    --mine-shaft-100: #212121;
+    --mine-shaft01-100: #404040;
+    --dove-gray-100: #656565;
+    --gray-100: #868686;
+    --silver-chalice-100: #ababab;
+    --alto-100: #d2d2d2;
+    --alabaster-100: #f7f6f6;
+    --grayish-white-100: #ebebeb;
+
+    /* Novo -------------------------- */
+
+        /* accent-dark-green  */
+    --accent-dark-green-50: #fafefc; 
+    --accent-dark-green-100: #ecf9f4; 
+    --accent-dark-green-200: #d5f2e7; 
+    --accent-dark-green-300: #b4e7d4; 
+    --accent-dark-green-400: #8adabc; 
+    --accent-dark-green-500: #57ca9e; 
+    --accent-dark-green-600: #329f75; 
+    --accent-dark-green-700: #1c5942; /* default*/
+    --accent-dark-green-800: #133d2d; 
+    --accent-dark-green-900: #0e2c21; 
+    --accent-dark-green-950: #0c271d; 
+
+    /* accent-mid-orange  */
+    --accent-mid-orange-50: #fefdfc; 
+    --accent-mid-orange-100: #fcf5f3; 
+    --accent-mid-orange-200: #f9e9e4; 
+    --accent-mid-orange-300: #f4d8cf; 
+    --accent-mid-orange-400: #eec2b4; 
+    --accent-mid-orange-500: #e7a793; 
+    --accent-mid-orange-600: #de876d; 
+    --accent-mid-orange-700: #d46240; /* default*/
+    --accent-mid-orange-800: #7b321c; 
+    --accent-mid-orange-900: #3e190e; 
+    --accent-mid-orange-950: #2a1109; 
+
+    /* tertiary-light-green  */
+    --tertiary-light-green-50: #fefffd; 
+    --tertiary-light-green-100: #f9fdf8; 
+    --tertiary-light-green-200: #f3fbf0; 
+    --tertiary-light-green-300: #e9f8e4; 
+    --tertiary-light-green-400: #dcf4d5; 
+    --tertiary-light-green-500: #cdefc2; 
+    --tertiary-light-green-600: #bbe9ac; 
+    --tertiary-light-green-700: #a7e293;  /* default*/
+    --tertiary-light-green-800: #459929; 
+    --tertiary-light-green-900: #1f4412; 
+    --tertiary-light-green-950: #12280b; 
+
+    /* secondary-cream  */
+    --secondary-cream-50: #fffffe; 
+    --secondary-cream-100: #fefefc; 
+    --secondary-cream-200: #fefdf9; 
+    --secondary-cream-300: #fdfbf4; 
+    --secondary-cream-400: #fcf8ee; 
+    --secondary-cream-500: #faf5e7; 
+    --secondary-cream-600: #f9f2de; 
+    --secondary-cream-700: #f7eed4; /* default*/
+    --secondary-cream-800: #c29b26; 
+    --secondary-cream-900: #504010; 
+    --secondary-cream-950: #2b2208; 
+
+    /* primary-orange  */
+    --primary-orange-50: #fffefd; 
+    --primary-orange-100: #fff9f5; 
+    --primary-orange-200: #fef2e9; 
+    --primary-orange-300: #fde9d8; 
+    --primary-orange-400: #fcdcc2; 
+    --primary-orange-500: #fbcda7; 
+    --primary-orange-600: #f9bb88; 
+    --primary-orange-700: #f8a663; /* default*/
+    --primary-orange-800: #ae5308; 
+    --primary-orange-900: #502604; 
+    --primary-orange-950: #311702; 
+
+    /* white  */
+    --white-50: #ffffff; 
+    --white-100: #ffffff; 
+    --white-200: #fefefe; 
+    --white-300: #fefefe; 
+    --white-400: #fdfdfd; 
+    --white-500: #fcfcfc; 
+    --white-600: #fbfbfb; /* default*/
+    --white-700: #fafafa; 
+    --white-800: #7d7d7d; 
+    --white-900: #323232; 
+    --white-950: #1a1a1a; 
+
+    /* black  */
+    --black-50: #fcfbfa; 
+    --black-100: #f4f1ec; 
+    --black-200: #e6dfd5; 
+    --black-300: #d3c5b4; 
+    --black-400: #baa58a; 
+    --black-500: #997d5a; 
+    --black-600: #5d4b36; 
+    --black-700: #16120d; /* default*/
+    --black-800: #0a0806; 
+    --black-900: #020201; 
+    --black-950: #000000; 
+
+    /* Tamanhos ----------------- */
+
+    --spacing-xl: 60px;
+    --spacing-lg: 40px;
+    --spacing-md: 30px;
+    --spacing-sm: 20px;
+    --spacing-xs: 10px;
+    --border-radius-lg: 20px;
+    --border-radius-md: 10px;
+    --border-radius-sm: 5px
+}
+
+a{
+    text-decoration: none;
+}
+
+input[readonly] {
+    cursor: text !important;
+    background-color: rgba(0, 0, 0, 0.02); /* Slight dim to show it's auto-filled */
+}

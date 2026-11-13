@@ -1,0 +1,157 @@
+@import url("../main.css");
+
+/* .bg-popup-cardpsi{
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #3a3a3a7a;
+    backdrop-filter: blur(1px);
+    z-index: 80;
+    top:0;
+    left:0;
+    overflow: hidden;
+} */
+
+.container-ver-psi{
+    position: fixed; 
+    background-color: var(--bege-default-100);
+    width:max-content;
+    min-width: 10px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-lg);
+    align-items: center;
+    box-shadow: 0px 0px 30px -5px #3a3a3a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    gap: 10px;
+    z-index: 81;
+    
+}
+.container-info-psi{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    gap: 20px;
+    margin-top: 10px;
+    background: var(--green-light-default-100);
+    border-radius: 15px;
+    justify-content: space-between;
+
+}
+.container-dados{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+.container-dados h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.container-dados p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-wrap: nowrap;
+}
+.container-conhecimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+.container-conhecimentos h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.container-conhecimentos span{
+    background: var(--white-default-100);
+    color: var(--black-default-100);
+    border: 1px solid var(--black-default-100);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 70%;
+    font-weight: 500;
+    height: max-content;
+}
+.container-info-psi img{
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.container-agendar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container-legenda{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.tag-legenda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tag-legenda p{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.color-tag-ocupado{
+    width: 20px;
+    height: 20px;
+    background-color: var(--green-light-default-100);
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.color-tag-livre{
+    width: 20px;
+    height: 20px;
+    background-color: var(--green-default-100);
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.btn-agendar-cancelar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.btn-cancelar{
+    padding: 10px 20px;
+    background-color: var( --mine-shaft01-100);
+    color: var(--white-default-100);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+}
+.btn-agendar{
+    padding: 10px 20px;
+    background-color: var(--green-default-100);
+    color: var(--white-default-100);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+}
+.btn-agendar:hover, .btn-cancelar:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}

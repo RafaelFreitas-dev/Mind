@@ -1,0 +1,6 @@
+@import url("../main.css");
+@import url("./main_login_cadastro.css");
+
+.inputs{
+    gap: 20px;
+}

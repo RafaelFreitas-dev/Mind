@@ -1,0 +1,47 @@
+@import url("../main.css");
+
+/* UI de icones -------------------*/
+
+.icon-ui{
+    background-color: var(--sea-green-100);
+    color: var(--white-default-100);
+    box-sizing: content-box;
+    border-radius: var(--spacing-xs);
+    font-size: 1.8rem;
+    margin-top:2px;
+    width:28px;
+    height:28px;
+    padding:7px;
+    cursor: pointer;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-ui:hover{
+    background-color: var(--green-default-100);
+}
+
+.icon-sair {
+  background-color: var(--metallic-copper-100);
+  color: var(--white-default-100);
+  box-sizing: content-box;
+  border-radius: var(--spacing-xs);
+  font-size: 1.8rem;
+  margin-top: 2px;
+  width: 28px;
+  height: 28px;
+  padding: 7px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-sair:hover {
+  background-color: var(--paarl-100);
+}
